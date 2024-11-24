@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(45deg, #6e45e2, #069b91);
+  background-size: 400% 400%;
+  animation: gradientBG 6s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+h4 {
+  border: 2px solid rgb(41, 41, 41);
+  padding: 10px 13px;
+  border-radius: 6px;
+}
+
+button {
+  border: 2px solid gray;
+  background: fixed;
+  padding: 8px 10px;
+  opacity: 60%;
+  border-radius: 6px;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+.delete-btn {
+  position: relative;
+  left: 25px;
+}
+
+.do-btn {
+  position: relative;
+  right: 25px;
+}
+
+.return-btn {
+  position: relative;
+  right: 25px;
+}
+/*  */
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 0;
+}
